@@ -1,6 +1,6 @@
 console.log("Content script inyectado!");
 
-const all = document.querySelector(".todo");
+let all = document.querySelector(".todo");
 
 if (all) {
     all.click();
@@ -21,6 +21,7 @@ const checkNotas = setInterval(() => {
     } else {
         console.log("No hay notas, reintentando clic...");
         all?.click();
+        all = document.querySelector(".todo");
     }
 }, 1000);
 
@@ -71,7 +72,7 @@ function calcPromedio() {
 
 if (divPromedio.length > 0) {
     divPromedio[0].innerHTML += `
-    <div class="promedioContainer" style="background-color: #2E6C8A; padding: 10px; border-radius: 5px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div class="promedioContainer" style="color:white; background-color: #2E6C8A; padding: 10px; border-radius: 5px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
         <h3 style="color: white">Promedio : ${promedio}</h3>
         <br>
         <p>Materias aprobadas : ${cantidadMaterias}</p>

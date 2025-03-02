@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Siu Guarani calculadora de promedio",
     "version": "1.0",
-    "description": "Una extensión de ejemplo",
+    "description": "Esta extension te permite calcular tu promedio en caso de que no lo muestre el siu guarani",
     "icons": {
       "16": "icon.png",
       "48": "icon.png",
@@ -22,6 +22,8 @@
         "run_at": "document_idle"
       }
     ],
-    "permissions": ["storage", "activeTab", "scripting"]
+    "permissions": ["scripting"],
+    "host_permissions": ["https://alu.unvime.edu.ar/g3w/historia_academica", "https://alu.unvime.edu.ar/g3w/historia_academica/"]
+
   }
   

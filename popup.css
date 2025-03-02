@@ -71,3 +71,12 @@ h3 span {
         font-size: 1em;
     }
 }
+
+
+#redirectButton{
+    text-decoration: none;
+    color: white;
+    background-color: #2E6C8A;
+    padding: 5%;
+    border-radius: 5px;
+}

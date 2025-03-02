@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Siu Guarani calculadora de promedio",
+    "version": "1.0",
+    "description": "Una extensión de ejemplo",
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://alu.unvime.edu.ar/g3w/historia_academica", "https://alu.unvime.edu.ar/g3w/historia_academica/"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "permissions": ["storage", "activeTab", "scripting"]
+  }
+  

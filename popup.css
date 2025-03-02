@@ -1,0 +1,73 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2E6C8A; /* Light grayish-blue background */
+    color: #333; /* Dark text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* General container for all content */
+#containerGral {
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Title styling */
+h1 {
+    font-size: 2.5em;
+    color: #2E6C8A; /* Green color for the main title */
+    margin-bottom: 15px;
+}
+
+/* Subtitle styling */
+h2 {
+    font-size: 1.5em;
+    color: #0270a7; /* Blue color for subtitle */
+    margin-bottom: 20px;
+}
+
+/* Steps styling */
+h3 {
+    font-size: 1.1em;
+    color: #555; /* Darker gray for steps */
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Highlight important info */
+h3 span {
+    font-weight: bold;
+    color: #4CAF50; /* Green for the steps to make them pop */
+}
+
+/* Simple responsive styling */
+@media (max-width: 600px) {
+    #containerGral {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}

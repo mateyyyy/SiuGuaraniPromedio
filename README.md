@@ -19,5 +19,8 @@ La extensión realiza un análisis automático de las notas y muestra el promedi
    ```bash
    git clone https://github.com/tu-usuario/siu-guarani-calculadora-promedio.git
 
+2. **Carga el archivo en las extensiones de chrome**
+
 EJEMPLO DE USO 
 ![{58D67FF8-ED99-4A72-ACBC-C027529CFF5A}](https://github.com/user-attachments/assets/2d58dad0-4fb1-45f9-90f0-0e08fb1a0399)
+
